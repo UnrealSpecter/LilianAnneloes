@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateVisualsTable extends Migration
+class CreateDescriptionsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,10 @@ class CreateVisualsTable extends Migration
      */
     public function up()
     {
-        Schema::create('visuals', function (Blueprint $table) {
+        Schema::create('descriptions', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('title');
-            $table->string('year_of_publising');
-            $table->string('images');
+            $table->integer('visual_id');
+            $table->string('content');
             $table->timestamps();
         });
     }
@@ -29,6 +28,6 @@ class CreateVisualsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('visuals');
+        Schema::dropIfExists('descriptions');
     }
 }

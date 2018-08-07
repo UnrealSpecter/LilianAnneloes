@@ -1,14 +1,38 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Frontend;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Visual;
+use App\Models\Visual;
+use App\Models\Description;
 
 class VisualController extends Controller
 {
     public function index(){
-        $visuals = Visual::all();
-        return view('partials.visual', compact('$visuals', 'visuals'));
+        //retrieve all visuals
+        $visuals = Visual::with('Descriptions')->get();
+
+        //define the categories that need to be shown by looping through all the visuals years of publishing and if it's not in there add it.
+        $yearsOfPublishing = array();
+        foreach($visuals as $visual){
+            if(!in_array($visual->year_of_publising, $yearsOfPublishing)){
+                $yearsOfPublishing[] = $visual->year_of_publising;
+            }
+        }
+
+        return view('front-end.visuals.index', compact('visuals', 'yearsOfPublishing'));
     }
+
+    public function getVisualsByYearOfPublishing($yearOfPublishing){
+        $visual = Visual::select('*')->where('year_of_publising', $yearOfPublishing)->orderBy('created_at', 'asc')->get();
+        return redirect('/visuals/' . $visual->first()->id);
+    }
+
+    public function show($id){
+        $activeVisual = Visual::find($id)->load('Descriptions');
+        $visuals = Visual::select('*')->where('year_of_publising', $activeVisual->year_of_publising)->orderBy('created_at', 'asc')->get();
+        return view('front-end.visuals.show', compact('activeVisual', 'visuals'));
+    }
+
 }

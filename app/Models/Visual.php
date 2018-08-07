@@ -4,7 +4,11 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class visual extends Model
+class Visual extends Model
 {
-    protected $fillable = ['tile', 'year_of_publishing', 'image_path'];
+    protected $fillable = ['tile', 'year_of_publishing'];
+
+    public function descriptions() {
+        return $this->hasMany('App\Models\Description');
+    }
 }
