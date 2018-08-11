@@ -15,7 +15,7 @@
         "laravel/tinker": "^1.0",
         "tcg/voyager": "^1.1",
         "laravelcollective/html": "~5.0",
-	      "orangehill/iseed": "dev-master"
+        "orangehill/iseed": "dev-master"
     },
     "require-dev": {
         "filp/whoops": "^2.0",

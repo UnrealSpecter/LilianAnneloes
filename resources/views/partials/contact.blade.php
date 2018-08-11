@@ -6,7 +6,7 @@
 @endsection
 
 @section('content')
-    <img src="{{ asset('/assets/contact/bg.jpg')}}" style="height: 100vh; width: 100vw; position: fixed; top: 0; left: 0;">
+    <!-- <img class="img-fluid" src="{{ asset('/assets/contact/bg.jpg')}}" style="height: 100vh; width: 100vw; position: fixed; top: 0; left: 0;"> -->
     <div class="col-12 col-xs-12 col-sm-12 col-md-7 col-lg-5 col-xl-4 contact-wrapper">
         @if(Session::has('success'))
         <div class="alert alert-success" style=" position:absolute; top:0px; border-radius: 0%;" role="alert">

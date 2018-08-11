@@ -34,7 +34,9 @@
             <img class="img-fluid invisible initial" src="{{ asset('/assets/sigar-content/feather-1.png') }}" alt="feather-1" style="position: absolute; width: 28%; left: 15%; bottom: 5%;">
 
             <!-- textual -->
-            <img class="img-fluid invisible to-be-revealed" src="{{ asset('/assets/sigar-content/textual-hover.png') }}" alt="textual hover" style="position: absolute; bottom: 32%; width: 15%; right: 22.5%;">
+            <a class="img-fluid invisible to-be-revealed" href="{{ url('/textual') }}" style="position: absolute; width: 14%; right: 23%; bottom: 30%;">
+                <img class="img-fluid" src="{{ asset('/assets/sigar-content/textual-hover.png') }}" alt="textual hover">
+            </a>
             <img class="img-fluid invisible initial" src="{{ asset('/assets/sigar-content/boys-r-toys.png') }}" alt="boys r toys" style="position: absolute; width: 10%; right: 25%; bottom: 30%;">
 
             <!-- contact -->
