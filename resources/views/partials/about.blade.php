@@ -16,7 +16,7 @@
         </div>
 
         <div class="col-xl-8 no-padding-margin">
-            <img class="img-fluid artist-statement" src="{{ $statement->first()->image_path }}" alt="artist-statement">
+            <img class="img-fluid artist-statement" src="{{ url('storage/') }}/{{ $statement->first()->image_path }}" alt="artist-statement">
         </div>
 
 @endsection
