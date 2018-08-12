@@ -21,19 +21,16 @@
     </div>
 
     <div class="col-12 col-xl-9 d-flex flex-row flex-wrap no-padding-margin">
-        <div class="visual-wrapper col-12 col-xl-8 d-flex flex-column wrapper-img no-padding-margin">
-            @php $images = json_decode($visual->images); @endphp
+        <div class="visual-wrapper col-12 col-xl-7 d-flex flex-column wrapper-img no-padding-margin">
+            @php $images = json_decode($activeVisual->images); @endphp
             @if($images)
             @foreach($images as $image)
                 <img class="img-fluid" src="{{ url('storage/')}}/{{ $image}}" alt="{{ $visuals->first()->title }}" >
             @endforeach
             @endif
         </div>
-        <div class="visual-description-wrapper d-flex flex-column col-12 col-xl-4 no-padding-margin">
-            <b>{{ $activeVisual->title }}</b>
-            @foreach($activeVisual->descriptions as $description)
-            <p style="margin-top: 15px;"> {{ $description->content }}</p>
-            @endforeach
+        <div class="visual-description-wrapper d-flex flex-column col-12 col-xl-3 offset-xl-1">
+            {!! $visual->extra_information !!}
         </div>
     </div>
 @endsection

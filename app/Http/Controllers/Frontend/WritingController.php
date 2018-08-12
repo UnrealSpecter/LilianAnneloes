@@ -11,7 +11,6 @@ class WritingController extends Controller
 {
     public function index(){
         $writings = Writing::with('descriptions')->get();
-        // dd($writings->first()->images);
 
         //define the categories that need to be shown by looping through all the visuals years of publishing and if it's not in there add it.
         $yearsOfPublishing = array();
@@ -20,7 +19,6 @@ class WritingController extends Controller
                 $yearsOfPublishing[] = $writing->year_of_publising;
             }
         }
-
         return view('front-end.writings.index', compact('writings', 'yearsOfPublishing'));
     }
 

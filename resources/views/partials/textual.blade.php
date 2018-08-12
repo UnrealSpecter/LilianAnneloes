@@ -1,6 +1,6 @@
 @extends('master')
 
-@section('title') Textual @endsection
+@section('title') TEXTUAL @endsection
 
 @section('additional-styles')
   <link rel="stylesheet" href="{{ asset('/styles/textual.css') }}">

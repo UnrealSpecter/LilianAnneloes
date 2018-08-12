@@ -17,6 +17,8 @@ class CreateVisualsTable extends Migration
             $table->increments('id');
             $table->string('title');
             $table->string('year_of_publising');
+            $table->longtext('extra_information');
+            $table->string('external_link')->nullable();
             $table->longtext('images');
             $table->timestamps();
         });

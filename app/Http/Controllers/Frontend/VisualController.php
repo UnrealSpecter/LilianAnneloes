@@ -31,6 +31,7 @@ class VisualController extends Controller
 
     public function show($id){
         $activeVisual = Visual::find($id)->load('Descriptions');
+        // dd($activeVisual);
         $visuals = Visual::select('*')->where('year_of_publising', $activeVisual->year_of_publising)->orderBy('created_at', 'asc')->get();
         return view('front-end.visuals.show', compact('activeVisual', 'visuals'));
     }
