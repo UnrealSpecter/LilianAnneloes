@@ -11,7 +11,7 @@ class VisualController extends Controller
 {
     public function index(){
         //retrieve all visuals
-        $visuals = Visual::with('Descriptions')->get();
+        $visuals = Visual::all();
 
         //define the categories that need to be shown by looping through all the visuals years of publishing and if it's not in there add it.
         $yearsOfPublishing = array();
@@ -30,7 +30,7 @@ class VisualController extends Controller
     }
 
     public function show($id){
-        $activeVisual = Visual::find($id)->load('Descriptions');
+        $activeVisual = Visual::find($id);
         // dd($activeVisual);
         $visuals = Visual::select('*')->where('year_of_publising', $activeVisual->year_of_publising)->orderBy('created_at', 'asc')->get();
         return view('front-end.visuals.show', compact('activeVisual', 'visuals'));

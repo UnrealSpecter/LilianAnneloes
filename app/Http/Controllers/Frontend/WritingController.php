@@ -10,7 +10,7 @@ use App\Models\Writing;
 class WritingController extends Controller
 {
     public function index(){
-        $writings = Writing::with('descriptions')->get();
+        $writings = Writing::all();
 
         //define the categories that need to be shown by looping through all the visuals years of publishing and if it's not in there add it.
         $yearsOfPublishing = array();
@@ -28,7 +28,7 @@ class WritingController extends Controller
     }
 
     public function show($id){
-        $activeWriting = Writing::find($id)->load('Descriptions');
+        $activeWriting = Writing::find($id);
         $writings = Writing::select('*')->where('year_of_publising', $activeWriting->year_of_publising)->orderBy('created_at', 'asc')->get();
         return view('front-end.writings.show', compact('activeWriting', 'writings'));
     }
