@@ -29,10 +29,6 @@ Route::get('/about/news/{id}', 'NewsController@show');
 Route::get('/visuals', 'Frontend\VisualController@index');
 Route::get('/textual/writings', 'Frontend\WritingController@index');
 
-//return visual or writing by year of publishing
-Route::get('/visuals/year-of-publishing/{yearOfPublishing}', 'Frontend\VisualController@getVisualsByYearOfPublishing');
-Route::get('/writings/year-of-publishing/{yearOfPublishing}', 'Frontend\WritingController@getWritingsByYearOfPublishing');
-
 // visuals and writings show.
 Route::get('/visuals/{id}', 'Frontend\VisualController@show');
 Route::get('/writings/{id}', 'Frontend\WritingController@show');

@@ -1,4 +1,4 @@
-@extends('master')
+<!-- @extends('master')
 @section('title') VISUALS @endsection
 
 @section('additional-css')
@@ -9,9 +9,8 @@
 
     <div class="col-sm-12 col-xl-3 d-flex flex-column align-items-start justify-content-start about-menu">
         <a class="active" href="{{ url('/visuals') }}/{{ $visuals->first()->id }}">Meest Recent:</a>
-        <a class="active" href="{{ url('/visuals') }}/{{ $visuals->first()->id }}">{{ $visuals->first()->title }}</a>
-        @foreach($yearsOfPublishing as $yearOfPublishing)
-        <a href="{{ url('/visuals/') }}/year-of-publishing/{{ $yearOfPublishing }}">Visuals ({{ $yearOfPublishing }})</a>
+        @foreach($visuals as $visual)
+        <a @if($visuals->first() === $visual) class="active" @endif href="{{ url('/visuals') }}/{{ $visual->id }}">{{ $visual->title }}</a>
         @endforeach
         <a href="{{ url('/') }}">(( terug</a>
     </div>
@@ -32,4 +31,4 @@
 @endsection
 
 @section('additional-scripts')
-@endsection
+@endsection -->

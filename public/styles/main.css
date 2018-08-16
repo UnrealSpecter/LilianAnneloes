@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'Lilian';
-    src: url('/font/lilian.eot');
+    src: url('/fonts/lilian.eot');
     src: local('â˜º'),
-         url('/font/lilian.woff') format('woff'),
-         url('/font/lilian.ttf') format('truetype'),
-         url('/font/lilian.svg') format('svg');
+         url('/fonts/lilian.woff') format('woff'),
+         url('/fonts/lilian.ttf') format('truetype'),
+         url('/fonts/lilian.svg') format('svg');
 }
 
 .master-container {
@@ -50,6 +50,9 @@ a:hover, .active {
 .active {
     border-bottom: 2px black solid;
     font-weight: 600;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .no-padding-margin {

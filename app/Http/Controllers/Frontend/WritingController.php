@@ -9,27 +9,29 @@ use App\Models\Writing;
 
 class WritingController extends Controller
 {
+
     public function index(){
         $writings = Writing::all();
 
         //define the categories that need to be shown by looping through all the visuals years of publishing and if it's not in there add it.
-        $yearsOfPublishing = array();
-        foreach($writings as $writing){
-            if(!in_array($writing->year_of_publising, $yearsOfPublishing)){
-                $yearsOfPublishing[] = $writing->year_of_publising;
-            }
-        }
-        return view('front-end.writings.index', compact('writings', 'yearsOfPublishing'));
-    }
+        // $yearsOfPublishing = array();
+        // foreach($writings as $writing){
+        //     if(!in_array($writing->year_of_publising, $yearsOfPublishing)){
+        //         $yearsOfPublishing[] = $writing->year_of_publising;
+        //     }
+        // }
 
-    public function getWritingsByYearOfPublishing($yearOfPublishing){
-        $writing = Writing::select('*')->where('year_of_publising', $yearOfPublishing)->orderBy('created_at', 'asc')->get();
-        return redirect('/writings/' . $writing->first()->id);
+        return redirect('/writings/' . $writings->first()->id);
     }
+    //
+    // public function getWritingsByYearOfPublishing($yearOfPublishing){
+    //     $writing = Writing::select('*')->where('year_of_publising', $yearOfPublishing)->orderBy('created_at', 'asc')->get();
+    //     return redirect('/writings/' . $writing->first()->id);
+    // }
 
     public function show($id){
         $activeWriting = Writing::find($id);
-        $writings = Writing::select('*')->where('year_of_publising', $activeWriting->year_of_publising)->orderBy('created_at', 'asc')->get();
+        $writings = Writing::select('*')->orderBy('created_at', 'asc')->get();
         return view('front-end.writings.show', compact('activeWriting', 'writings'));
     }
 }

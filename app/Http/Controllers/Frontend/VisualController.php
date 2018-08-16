@@ -10,30 +10,33 @@ use App\Models\Description;
 class VisualController extends Controller
 {
     public function index(){
+
         //retrieve all visuals
         $visuals = Visual::all();
 
         //define the categories that need to be shown by looping through all the visuals years of publishing and if it's not in there add it.
-        $yearsOfPublishing = array();
-        foreach($visuals as $visual){
-            if(!in_array($visual->year_of_publising, $yearsOfPublishing)){
-                $yearsOfPublishing[] = $visual->year_of_publising;
-            }
-        }
+        // $yearsOfPublishing = array();
+        // foreach($visuals as $visual){
+        //     if(!in_array($visual->year_of_publising, $yearsOfPublishing)){
+        //         $yearsOfPublishing[] = $visual->year_of_publising;
+        //     }
+        // }
 
-        return view('front-end.visuals.index', compact('visuals', 'yearsOfPublishing'));
+        return redirect('/visuals/' . $visuals->first()->id);
     }
 
-    public function getVisualsByYearOfPublishing($yearOfPublishing){
-        $visual = Visual::select('*')->where('year_of_publising', $yearOfPublishing)->orderBy('created_at', 'asc')->get();
-        return redirect('/visuals/' . $visual->first()->id);
-    }
+    // public function redirectToMostRecentVisual($id){
+    //     $visual = Visual::select('*')->where('year_of_publising', $yearOfPublishing)->orderBy('created_at', 'asc')->get();
+    //     return redirect('/visuals/' . $visual->first()->id);
+    // }
 
     public function show($id){
+        // all visuals for the menu items
+        $visuals = Visual::all();
+        //the single visual for the information presentation
         $activeVisual = Visual::find($id);
-        // dd($activeVisual);
-        $visuals = Visual::select('*')->where('year_of_publising', $activeVisual->year_of_publising)->orderBy('created_at', 'asc')->get();
-        return view('front-end.visuals.show', compact('activeVisual', 'visuals'));
+        //return both to the view
+        return view('front-end.visuals.show', compact('visuals', 'activeVisual'));
     }
 
 }
