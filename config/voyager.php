@@ -211,7 +211,7 @@ return [
     ],
 
     'additional_js' => [
-        //'js/custom.js',
+        'scripts/global/tiny_mce.js'
     ],
 
     'googlemaps' => [

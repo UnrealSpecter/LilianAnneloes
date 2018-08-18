@@ -16,10 +16,11 @@ class CreateVisualsTable extends Migration
         Schema::create('visuals', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title');
-            $table->string('year_of_publising');
+            $table->string('date_of_publising');
+            $table->longtext('body');
             $table->longtext('extra_information');
-            $table->string('external_link')->nullable();
-            $table->longtext('images');
+            // $table->string('external_link')->nullable();
+            // $table->longtext('images');
             $table->timestamps();
         });
     }

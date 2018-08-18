@@ -16,9 +16,9 @@ class CreateWritingsTable extends Migration
         Schema::create('writings', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title');
-            $table->string('year_of_publising');
+            $table->string('date_of_publising');
             $table->string('download_path')->nullable();
-            $table->longtext('main_content');
+            $table->longtext('body');
             $table->longtext('extra_information');
             $table->timestamps();
         });

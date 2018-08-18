@@ -30,6 +30,10 @@ html,body{
   text-transform: uppercase;
 }
 
+.a, p, h1, h2, div, span {
+    font-family: Lilian !important;
+}
+
 .about-menu, .cv-menu, .news-menu {
     font-size: 1em;
     padding: 0;
