@@ -21,23 +21,14 @@ class WritingsTableSeeder extends Seeder
             array (
                 'id' => 1,
                 'title' => 'MANIFESTO FEMINISTO',
-                'year_of_publising' => '2018',
-            'download_path' => '[{"download_link":"writings\\/August2018\\/SzRRxl0jBTBr8vhKyqld.pdf","original_name":"SCRIPTIE VOOR ONSTAGE (2).pdf"}]',
-            'main_content' => '<p><strong><span style="color: #000000; font-family: Calibri, Helvetica, sans-serif; font-size: 16px;">"</span><span style="color: #000000; font-family: Helvetica; font-size: 11px;">(...) Vanaf het moment dat je ouder wordt moet ineens alles een reden hebben. Als je twee verschillende kleuren</span></strong></p>
-<p style="margin: 0px; color: #000000; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 11px; line-height: normal; font-family: Helvetica;"><strong>sokken om je voeten draagt wordt meteen de aanname geboren dat je geen schone sokken meer had liggen.</strong></p>
-<p style="margin: 0px; color: #000000; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 11px; line-height: normal; font-family: Helvetica;"><strong>Wanneer je een koekje weigert ben je vast op dieet. En een oudere vrouw zonder bijbehorende oudere man is</strong></p>
-<p style="margin: 0px; color: #000000; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 11px; line-height: normal; font-family: Helvetica;"><strong>vast ontzettend eenzaam. Volwassenen houden van uitleg. Het meest nog, wanneer ze deze uitleg zelf mogen</strong></p>
-<p style="margin: 0px; color: #000000; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 11px; line-height: normal; font-family: Helvetica;"><strong>bedenken.</strong></p>
-<p style="margin: 0px; color: #000000; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 11px; line-height: normal; font-family: Helvetica;">&nbsp;</p>
-<p style="margin: 0px; color: #000000; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 11px; line-height: normal; font-family: Helvetica;"><strong>Zo ben ik een boze vrouw. Dat wil niet zeggen dat ik daadwerkelijk een boze vrouw ben; eerder dat ik een</strong></p>
-<p style="margin: 0px; color: #000000; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 11px; line-height: normal; font-family: Helvetica;"><strong>geleerde vrouw ben, die het nut van zwijgen over schadelijke kwesties niet inziet, en haar kennis ten goede</strong></p>
-<p style="margin: 0px; color: #000000; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 11px; line-height: normal; font-family: Helvetica;"><strong>probeert te delen. De wereld noemt mij een feminist. Ik noem mezelf een equalist. Een term die min of meer,</strong></p>
-<p style="margin: 0px; color: #000000; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 11px; line-height: normal; font-family: Helvetica;"><strong>maar net niet &eacute;cht gehanteerd wordt, maar in essentie dezelfde inhoud omvat. (...)&nbsp;"</strong></p>',
-                'extra_information' => '<div style="color: #000000; font-family: Calibri, Helvetica, sans-serif; font-size: 16px;">MANIFESTO FEMINISTO&nbsp;</div>
-<div style="color: #000000; font-family: Calibri, Helvetica, sans-serif; font-size: 16px;">Graduation thesis, (ongoing) research on modern feminism and how to perfect it, june 2018</div>
-<div style="color: #000000; font-family: Calibri, Helvetica, sans-serif; font-size: 16px;">Published by: HBO Kennisbank</div>',
-                'created_at' => '2018-08-12 21:59:02',
-                'updated_at' => '2018-08-12 21:59:02',
+                'date_of_publising' => '2018-12-12',
+                'download_path' => NULL,
+            'body' => '<p>"(...) VANAF HET MOMENT DAT JE OUDER WORDT MOET INEENS ALLES EEN REDEN HEBBEN. ALS JE TWEE VERSCHILLENDE KLEUREN SOKKEN OM JE VOETEN DRAAGT WORDT METEEN DE AANNAME GEBOREN DAT JE GEEN SCHONE SOKKEN MEER HAD LIGGEN. WANNEER JE EEN KOEKJE WEIGERT BEN JE VAST OP DIEET. EN EEN OUDERE VROUW ZONDER BIJBEHORENDE OUDERE MAN IS VAST ONTZETTEND EENZAAM. VOLWASSENEN HOUDEN VAN UITLEG. HET MEEST NOG, WANNEER ZE DEZE UITLEG ZELF MOGEN BEDENKEN.</p>
+<p>ZO BEN IK EEN BOZE VROUW. DAT WIL NIET ZEGGEN DAT IK DAADWERKELIJK EEN BOZE VROUW BEN; EERDER DAT IK EEN GELEERDE VROUW BEN, DIE HET NUT VAN ZWIJGEN OVER SCHADELIJKE KWESTIES NIET INZIET, EN HAAR KENNIS TEN GOEDE PROBEERT TE DELEN. DE WERELD NOEMT MIJ EEN FEMINIST. IK NOEM MEZELF EEN EQUALIST. EEN TERM DIE MIN OF MEER, MAAR NET NIET &Eacute;CHT GEHANTEERD WORDT, MAAR IN ESSENTIE DEZELFDE INHOUD OMVAT. (...) "</p>',
+                'extra_information' => '<h2><strong>FEMINISTO MANIFESTO</strong></h2>
+<p>GRADUATION THESIS, (ONGOING) RESEARCH ON MODERN FEMINISM AND HOW TO PERFECT IT, JUNE 2018 PUBLISHED BY: HBO KENNISBANK</p>',
+                'created_at' => '2018-08-18 14:53:00',
+                'updated_at' => '2018-08-18 16:23:11',
             ),
         ));
         

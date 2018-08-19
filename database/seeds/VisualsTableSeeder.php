@@ -12,46 +12,55 @@ class VisualsTableSeeder extends Seeder
      */
     public function run()
     {
-        
+
 
         \DB::table('visuals')->delete();
-        
+
         \DB::table('visuals')->insert(array (
-            0 => 
+            0 =>
             array (
                 'id' => 1,
                 'title' => 'THE WOMAN AS A KITCHEN TABLE',
-                'year_of_publising' => '2018',
-            'extra_information' => '<p><span style="box-sizing: border-box; font-weight: bolder; color: #212529; font-family: Lilian; font-size: 20px; text-transform: uppercase;">THE WOMAN AS A KITCHENTABLE (2018, CA. 82 X 112 CM, GRAPHITE ON PAPER)</span><span style="color: #212529; font-family: Lilian; font-size: 20px; text-transform: uppercase;">&nbsp;</span><br style="box-sizing: border-box; color: #212529; font-family: Lilian; font-size: 20px; text-transform: uppercase;" /><br style="box-sizing: border-box; color: #212529; font-family: Lilian; font-size: 20px; text-transform: uppercase;" /><span style="color: #212529; font-family: Lilian; font-size: 20px; text-transform: uppercase;">&lsquo;THE WOMAN AS A KITCHENTABLE&rsquo; IS A CARICATURE OF MODERN WESTERN SOCIETY&rsquo;S GENDER/SOCIAL HIERARCHY. AN ENLARGEMENT OF PROBLEMATIC REPRESENTATION OF GENDER ROLES AND FEMININITY POSED BY MEDIA, CULTURE, RELIGION AND UPBRINGING.</span></p>',
-                'external_link' => NULL,
-                'images' => '["visuals\\/August2018\\/BvH202JChyvS1Kd1m8Ap.jpg","visuals\\/August2018\\/gGpylxNUwFuBcF7wm9sw.jpg","visuals\\/August2018\\/aPUjDdJH0wiJOPDrAGrj.jpg","visuals\\/August2018\\/xR2fzS9qzkuLDQeMpYiw.jpg","visuals\\/August2018\\/DSvE9LsCKXoHd1O07pS4.jpg"]',
-                'created_at' => '2018-08-12 21:35:21',
-                'updated_at' => '2018-08-12 21:35:21',
+                'date_of_publising' => '2018-01-01',
+                'body' => '<p><img src="http://liliananneloes.test/storage/visuals/August2018/14.jpg" alt="" width="931" height="621" /><img src="http://liliananneloes.test/storage/visuals/August2018/24.jpg" alt="" width="975" height="650" /><img src="http://liliananneloes.test/storage/visuals/August2018/34.jpg" alt="" width="942" height="628" /><img src="http://liliananneloes.test/storage/visuals/August2018/45.jpg" alt="" width="934" height="623" /><img src="http://liliananneloes.test/storage/visuals/August2018/54.jpg" alt="" width="991" height="661" /></p>',
+            'extra_information' => '<p><strong>(2018, CA. 41 X 56 CM, GRAPHITE ON PAPER) </strong></p>
+<p>&lsquo;HOW MEN FEEL WHEN TALKING ABOUT WOMEN ISSUES&rsquo; IS A VISUAL REACTION TO THE ANGRY AND OFFENDED REACTIONS I GOT ON &lsquo;THE WOMAN AS A KITCHENTABLE&rsquo;. THE TITLE SPEAKS FOR ITSELF, EVEN THOUGH THE WORK ITSELF CAN SEND RATHER DIFFERENT MESSAGES. WHILE SEEING A MALE IN THIS POSITION LOOKS RATHER ODD, CRUEL AND STRANGE, SEEING A WOMAN IN THE POSITION PORTRAYED IN &lsquo;THE WOMAN AS A KITCHENTABLE&rsquo;, FEELS QUITE FAMILIAR. MAYBE EVEN MORE NORMAL. THIS AND &lsquo;THE WOMAN AS A KITCHENTABLE&rsquo; FORM A DIPTYCH, TO BE PRESENTED TOGETHER.</p>',
+                'created_at' => '2018-08-19 15:08:21',
+                'updated_at' => '2018-08-19 15:08:21',
             ),
-            1 => 
+            1 =>
             array (
                 'id' => 2,
-                'title' => '#BREAKTHEINTERNET',
-                'year_of_publising' => '2017',
-            'extra_information' => '<p><span style="box-sizing: border-box; font-weight: bolder; color: #212529; font-family: Lilian; font-size: 20px; text-transform: uppercase;">#BREAKTHEINTERNET (2017, CA. 84 X 118 CM, INK ON PAPER)&nbsp;</span><br style="box-sizing: border-box; color: #212529; font-family: Lilian; font-size: 20px; text-transform: uppercase;" /><br style="box-sizing: border-box; color: #212529; font-family: Lilian; font-size: 20px; text-transform: uppercase;" /><span style="color: #212529; font-family: Lilian; font-size: 20px; text-transform: uppercase;">A FOUR-PART SERIES OF DRAWINGS REGARDING SEX AND SEXUALITY IN INTERNETCULTURE (AND WHAT BEING FEMALE WITHIN ALL OF THIS MEANS FOR BOTH THE MENTAL AND PHYSICAL STATE OF BEING).</span></p>',
-                'external_link' => NULL,
-                'images' => '["visuals\\/August2018\\/IC5GzLTmnQZKH93Ys2Nj.jpg","visuals\\/August2018\\/GUcUZ2RtKBrw8ZYNmFrU.jpg","visuals\\/August2018\\/aZd7vyOxX79mfNJO7DzJ.jpg","visuals\\/August2018\\/Ws5RUIZZKgw5K1A43hPr.jpg"]',
-                'created_at' => '2018-08-12 21:35:48',
-                'updated_at' => '2018-08-12 21:35:48',
+                'title' => 'HOW MEN FEEL WHEN TALKING ABOUT WOMENS ISSUES',
+                'date_of_publising' => '2018-01-01',
+                'body' => '<p><img src="http://liliananneloes.test/storage/visuals/August2018/7QkbXoLi07LKzzfanDal1.jpg" alt="" width="402" height="602" /><img src="http://liliananneloes.test/storage/visuals/August2018/00A_32.JPG" alt="" width="1800" height="2696" /><img src="http://liliananneloes.test/storage/visuals/August2018/F1kBjtxFYo0z51Tobc4I1.jpg" alt="" width="402" height="602" /><br /><img src="http://liliananneloes.test/storage/visuals/August2018/O0ukdo5w8BRL4GUzZhLf1.jpg" alt="" width="602" height="402" /><br /><img src="http://liliananneloes.test/storage/visuals/August2018/IkXfDk5MVYV8e5xRzzWG1.jpg" alt="" width="466" height="280" /></p>',
+            'extra_information' => '<p><strong>(2018, CA. 41 X 56 CM, GRAPHITE ON PAPER) </strong></p>
+<p>&lsquo;HOW MEN FEEL WHEN TALKING ABOUT WOMEN ISSUES&rsquo; IS A VISUAL REACTION TO THE ANGRY AND OFFENDED REACTIONS I GOT ON &lsquo;THE WOMAN AS A KITCHENTABLE&rsquo;. THE TITLE SPEAKS FOR ITSELF, EVEN THOUGH THE WORK ITSELF CAN SEND RATHER DIFFERENT MESSAGES. WHILE SEEING A MALE IN THIS POSITION LOOKS RATHER ODD, CRUEL AND STRANGE, SEEING A WOMAN IN THE POSITION PORTRAYED IN &lsquo;THE WOMAN AS A KITCHENTABLE&rsquo;, FEELS QUITE FAMILIAR. MAYBE EVEN MORE NORMAL. THIS AND &lsquo;THE WOMAN AS A KITCHENTABLE&rsquo; FORM A DIPTYCH, TO BE PRESENTED TOGETHER.</p>',
+                'created_at' => '2018-08-19 15:13:00',
+                'updated_at' => '2018-08-19 15:16:49',
             ),
-            2 => 
+            2 =>
             array (
                 'id' => 3,
+                'title' => '#BREAKTHEINTERNET',
+                'date_of_publising' => '2017-01-01',
+                'body' => '<p><img src="http://liliananneloes.test/storage/visuals/August2018/15.jpg" alt="" width="634" height="924" /><br /><img src="http://liliananneloes.test/storage/visuals/August2018/25.jpg" alt="" width="699" height="993" /><br /><img src="http://liliananneloes.test/storage/visuals/August2018/36.jpg" alt="" width="702" height="961" /><br /><img src="http://liliananneloes.test/storage/visuals/August2018/46.jpg" alt="" width="736" height="996" /></p>',
+                'extra_information' => '<p><strong>#BREAKTHEINTERNET (2017, CA. 84 X 118 CM, INK ON PAPER)</strong><br /><br />A FOUR-PART SERIES OF DRAWINGS REGARDING SEX AND SEXUALITY IN INTERNETCULTURE (AND WHAT BEING FEMALE WITHIN ALL OF THIS MEANS FOR BOTH THE MENTAL AND PHYSICAL STATE OF BEING).</p>',
+                'created_at' => '2018-08-19 15:15:00',
+                'updated_at' => '2018-08-19 15:17:29',
+            ),
+            3 =>
+            array (
+                'id' => 4,
                 'title' => 'ONKRUID',
-                'year_of_publising' => '2017',
-            'extra_information' => '<p><span style="box-sizing: border-box; font-weight: bolder; color: #212529; font-family: Lilian; font-size: 20px; text-transform: uppercase;">ONKRUID (2017, DIGITAL FILM)&nbsp;<a href="https://www.youtube.com/watch?v=nEZox2qmhis">(Bekijk Video)</a></span><br style="box-sizing: border-box; color: #212529; font-family: Lilian; font-size: 20px; text-transform: uppercase;" /><br style="box-sizing: border-box; color: #212529; font-family: Lilian; font-size: 20px; text-transform: uppercase;" /><span style="color: #212529; font-family: Lilian; font-size: 20px; text-transform: uppercase;">ONKRUID (WEEDS) IS A EXPERIMENTAL, AUTOBIOGRAPHIC SHORTFILM. IT SHOWS HOW (SEXUAL) TRAUMA CAN CARVE AND BRUISE THE MENTAL STATE IN A RIGOROUS WAY.&nbsp;</span></p>',
-                'external_link' => NULL,
-                'images' => '["visuals\\/August2018\\/0ZfQ4VcoUaoy8Jqh7FSM.jpg"]',
-                'created_at' => '2018-08-12 21:36:39',
-                'updated_at' => '2018-08-12 21:36:39',
+                'date_of_publising' => '2017-01-01',
+                'body' => '<p><iframe title="" src="https://www.youtube.com/embed/nEZox2qmhis?wmode=opaque&amp;theme=dark" width="560" height="315" frameborder="0" allowfullscreen=""></iframe></p>',
+            'extra_information' => '<p><strong>ONKRUID (2017, DIGITAL FILM)</strong><br /><br />ONKRUID (WEEDS) IS A EXPERIMENTAL, AUTOBIOGRAPHIC SHORTFILM. IT SHOWS HOW (SEXUAL) TRAUMA CAN CARVE AND BRUISE THE MENTAL STATE IN A RIGOROUS WAY.&nbsp;</p>',
+                'created_at' => '2018-08-19 15:16:13',
+                'updated_at' => '2018-08-19 15:16:13',
             ),
         ));
-        
-        
+
+
     }
 }
