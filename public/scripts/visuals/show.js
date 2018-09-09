@@ -11,7 +11,7 @@ $(document).ready(function(){
     // });
 
 
-    $('img').attr('src').replace('http', 'https');
+    // $('img').attr('src').replace('http', 'https');
 
     //resize iframe if it has video
     resizeIframe();
