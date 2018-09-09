@@ -20,7 +20,7 @@
         <div class="writing-wrapper col-12 col-xl-7 d-flex flex-column wrapper-img no-padding-margin">
             {!! $writings->first()->main_content !!}
         </div>
-        <div class="writing-description-wrapper d-flex flex-column col-12 col-xl-4 offset-xl-1">
+        <div class="writing-description-wrapper d-flex flex-column col-12 col-xl-4 offset-xl-1 no-padding-margin">
             @if($writings->first()->download_path)
                 @foreach(json_decode($writings->first()->download_path) as $file)
                     <b><a href="{{ url('storage') }}/{{ $file->download_link }}" download>(download/bekijk hier)</a></b>
