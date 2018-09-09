@@ -21,7 +21,7 @@
         <div class="writing-description-wrapper d-flex flex-column col-12 col-xl-3 offset-xl-1 no-padding-margin">
             @if($activeWriting->download_path)
             @foreach(json_decode($activeWriting->download_path) as $file)
-                <b><a href="{{ url('storage') }}/{{ $file->download_link }}" download>(download/bekijk hier)</a></b>
+                <a href="{{ url('storage') }}/{{ $file->download_link }}" download><h2>(download/bekijk hier)</h2></a>
             @endforeach
             @endif
             {!! $activeWriting->extra_information !!}
