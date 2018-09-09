@@ -16,7 +16,7 @@
             <a href="{{ url('/visuals/') }}/{{ $visual->id }}">{{ $visual->title }}</a>
             @endif
         @endforeach
-        <a href="{{url('/visuals')}}">(( terug</a>
+        <a href="{{url('/visuals')}}">(( back</a>
     </div>
 
     <div class="col-12 col-xl-9 d-flex flex-row flex-wrap no-padding-margin">

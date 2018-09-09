@@ -12,7 +12,7 @@
         <div class="col-sm-12 col-xl-3 d-flex flex-column align-items-start justify-content-start about-menu">
             <a class="active" href="{{url('/about')}}">About</a>
             <a href="{{url('/about/cv')}}">Curriculum Vitae</a>
-            <a href="{{url('/')}}">(( terug</a>
+            <a href="{{url('/')}}">(( back</a>
         </div>
 
         <div class="col-xl-8 no-padding-margin">

@@ -6,7 +6,7 @@
 @endsection
 
 @section('content')
-    <!-- <img class="img-fluid" src="{{ asset('/assets/contact/bg.jpg')}}" style="height: 100vh; width: 100vw; position: fixed; top: 0; left: 0;"> -->
+
     <div class="col-12 col-xs-12 col-sm-12 col-md-7 col-lg-5 col-xl-4 contact-wrapper">
         @if(Session::has('success'))
         <div class="alert alert-success" style=" position:absolute; top:0px; border-radius: 0%;" role="alert">
@@ -23,7 +23,7 @@
                 </ul>
             </div>
         @endif
-        <h4><a href="/" style="color: white;">(( terug</a><h4>
+        <h4><a href="/" style="color: white;">(( back</a><h4>
         <h4><span class="underline">Contact</span></h4>
 
         {{ Form::open(['action' => 'ContactController@index']) }}

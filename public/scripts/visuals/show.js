@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
     //add fluid classes to correctly display images
-    $('img').addClass('img-fluid col-12');
+    $('img').addClass('img-fluid col-12 no-padding-margin');
 
     //resize iframe if it has video
     resizeIframe();
