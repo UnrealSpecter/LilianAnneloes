@@ -40,7 +40,7 @@
             <img class="img-fluid invisible initial" src="{{ asset('/assets/sigar-content/boys-r-toys.png') }}" alt="boys r toys" style="position: absolute; width: 10%; right: 25%; bottom: 30%;">
 
             <!-- contact -->
-            <a class="img-fluid invisible to-be-revealed" href="{{ url('/contact') }}" style="position: absolute; width: 14%; bottom: 100px; right: 14%;">
+            <a class="img-fluid invisible to-be-revealed d-flex align-items-center justify-content-center" href="{{ url('/contact') }}" style="position: absolute; width: 14%; bottom: 7.5%; right: 14%;">
                 <img class="img-fluid" src="{{ asset('/assets/sigar-content/contact-hover.png') }}" alt="contact hover">
             </a>
             <img class="img-fluid invisible initial" src="{{ asset('/assets/sigar-content/meat-bag.png') }}" alt="meat bag" style="position: absolute; bottom: 45px; width: 14%; right: 14%;">
