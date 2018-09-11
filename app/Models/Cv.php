@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Page extends Model
+class Cv extends Model
 {
-    protected $fillable = ['image_path'];
+    protected $fillables = ['body'];
 }

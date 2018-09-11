@@ -19,7 +19,8 @@ $(document).ready(function() {
             { title: 'Titel', block: 'h1'},
             { title: 'Kop', block: 'h2' },
             { title: 'Paragraph', block: 'p'},
-            { img: 'img', classes: 'img-fluid'}
+            { title: 'Curriculum Heading', block: 'h3'},
+            { title: 'Curriculum Entry', block: 'h4'} 
         ]
 
     });
