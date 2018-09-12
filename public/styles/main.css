@@ -7,6 +7,10 @@
          url('/fonts/lilian.svg') format('svg');
 }
 
+h2, .h2 {
+    font-size: 1.5rem;
+}
+
 .master-container {
     width: 100vw;
     padding: 0;
@@ -32,11 +36,6 @@ html,body{
 
 .a, p, h1, h2, div, span {
     font-family: Lilian !important;
-}
-
-.about-menu, .cv-menu, .news-menu {
-    font-size: 1em;
-    padding: 0;
 }
 
 .about-menu > a, .cv-menu > a, .news-menu > a {
@@ -68,18 +67,67 @@ a:hover, .active {
     padding: 25px;
 }
 
+.back-button {
+    font-weight: bold;
+    margin-top: 5%;
+}
+
+.about-menu, .cv-menu, .news-menu {
+    font-size: 1em;
+    padding: 0;
+}
+
+.visual-description-wrapper > p > strong, .writing-description-wrapper > h2 {
+    font-size: 1em;
+}
+
+.visual-description-wrapper > p, .writing-wrapper, .writing-description-wrapper {
+    font-size: 0.9em;
+}
+
+.visual-wrapper, .writing-wrapper {
+    padding: 0;
+}
+
 @media (min-width: 576px) {
+    .about-menu, .cv-menu, .news-menu {
+        font-size: 1.15em;
+    }
+
+    .visual-description-wrapper > p > strong, .writing-description-wrapper > h2 {
+        font-size: 1.15em;
+    }
+
+    .visual-description-wrapper > p, .writing-wrapper, .writing-description-wrapper {
+        font-size: 0.9em;
+    }
+
+    .visual-wrapper, .writing-wrapper {
+        padding: 0;
+    }
 
 }
 
 @media (min-width: 768px) {
 
     .about-menu, .cv-menu, .news-menu {
-        font-size: 1.5em;
+        font-size: 1.35em;
+    }
+
+    .visual-description-wrapper > p > strong, .writing-description-wrapper > h2 {
+        font-size: 1.35em;
+    }
+
+    .visual-description-wrapper > p, .writing-wrapper, .writing-description-wrapper {
+        font-size: 1.10em;
     }
 
     .master-container {
         padding: 40px
+    }
+
+    .visual-wrapper, .writing-wrapper {
+        padding: 0;
     }
 
 }
@@ -87,7 +135,19 @@ a:hover, .active {
 @media (min-width: 992px) {
 
     .about-menu, .cv-menu, .news-menu {
+        font-size: 1.25em;
+    }
+
+    .visual-description-wrapper > p > strong, .writing-description-wrapper > h2 {
+        font-size: 1.25em;
+    }
+
+    .visual-description-wrapper > p, .writing-wrapper, .writing-description-wrapper {
         font-size: 1em;
+    }
+
+    .visual-wrapper, .writing-wrapper {
+        padding: 0;
     }
 
 }
@@ -96,6 +156,18 @@ a:hover, .active {
 
     .master-container {
         padding: 60px
+    }
+
+    .visual-wrapper, .writing-wrapper {
+        padding: 0 30px 0 30px;
+    }
+
+    .visual-description-wrapper > p > strong, .writing-description-wrapper > h2 {
+        font-size: 1.25em;
+    }
+
+    .visual-description-wrapper > p, .writing-wrapper, .writing-description-wrapper {
+        font-size: 1em;
     }
 
     .about-menu, .cv-menu, .news-menu {
@@ -113,12 +185,16 @@ a:hover, .active {
         padding: 80px
     }
 
-    .visual-description-wrapper > b {
-        font-size: 1.5em;
+    .visual-wrapper, .writing-wrapper {
+        padding: 0 40px 0 40px;
     }
 
-    .visual-description-wrapper > p {
-        font-size: 1em;
+    .visual-description-wrapper > p > strong, .writing-description-wrapper > h2 {
+        font-size: 1.4em;
+    }
+
+    .visual-description-wrapper > p, .writing-wrapper, .writing-description-wrapper {
+        font-size: 1.25em;
     }
 
 }

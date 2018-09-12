@@ -23,7 +23,6 @@
                 </ul>
             </div>
         @endif
-        <h4><a href="/" style="color: white;">(( back</a><h4>
         <h4><span class="underline">Contact</span></h4>
 
         {{ Form::open(['action' => 'ContactController@index']) }}
@@ -45,6 +44,7 @@
         <input class="submit" type="submit" value="Submit">
         {{ Form::close() }}
     </div>
+    <h4><a href="/" class="back-button" style="color: white;">(( back</a><h4>
 @endsection
 
 @section('additional-scripts')

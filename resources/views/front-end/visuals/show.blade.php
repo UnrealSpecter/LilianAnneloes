@@ -1,8 +1,8 @@
 @extends('master')
 @section('title') VISUALS @endsection
 
-@section('additional-css')
-  <link rel="stylesheet" href="{{ asset('/css/visual.css') }}">
+@section('additional-styles')
+  <link rel="stylesheet" href="{{ asset('/styles/visual.css') }}">
 @endsection
 
 @section('content')
@@ -11,12 +11,12 @@
         @foreach($visuals as $visual)
         <a @if($activeVisual == $visual) class="active" @endif href="{{ url('/visuals') }}/{{ $visual->id }}">{{ $visual->title }}</a>
         @endforeach
-        <a style="margin-top: 5%;" href="{{url('/')}}">(( back</a>
+        <a class="back-button" href="{{url('/')}}">(( back</a>
     </div>
 
     <div class="col-12 col-xl-9 d-flex flex-row flex-wrap no-padding-margin">
-        <div class="visual-wrapper col-12 col-xl-7 d-flex flex-column wrapper-img no-padding-margin">{!! $activeVisual->body !!}</div>
-        <div class="visual-description-wrapper d-flex flex-column col-12 col-xl-4 offset-xl-1 no-padding-margin">{!! $activeVisual->extra_information !!}</div>
+        <div class="visual-wrapper col-12 col-xl-7 d-flex flex-column wrapper-img">{!! $activeVisual->body !!}</div>
+        <div class="visual-description-wrapper d-flex flex-column col-12 col-xl-5 no-padding-margin">{!! $activeVisual->extra_information !!}</div>
     </div>
 @endsection
 
