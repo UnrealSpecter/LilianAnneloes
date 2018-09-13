@@ -25,12 +25,12 @@ class ContactController extends Controller
 
         Mail::send('partials.email-template', $data, function($message) use ($data){
             $message->from($data['email']);
-            // $message->to('lilianklasens@hotmail.com');
-            $message->to('tomi_emmen@hotmail.com');
+            $message->to('lilianklasens@hotmail.com');
             $message->subject($data['name']);
         });
 
         Session::flash('success', 'Je email is gestuurd!');
+
         return redirect('/contact');
 
     }
