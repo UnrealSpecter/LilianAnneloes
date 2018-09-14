@@ -51,10 +51,10 @@ a:hover, .active {
 }
 
 .active {
-    border-bottom: 2px black solid;
+    /* border-bottom: 2px black solid; */
     font-weight: 600;
     overflow:hidden;
-    white-space: nowrap;
+    white-space: normal;
     text-overflow: ellipsis;
 }
 
