@@ -16,6 +16,7 @@ class CreateCvTable extends Migration
         Schema::create('curriculum_viteas', function (Blueprint $table) {
             $table->increments('id');
             $table->longtext('body');
+            $table->timestamps();
         });
     }
 
