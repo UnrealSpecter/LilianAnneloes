@@ -13,7 +13,7 @@ class CreateCvTable extends Migration
      */
     public function up()
     {
-        Schema::create('cv', function (Blueprint $table) {
+        Schema::create('curriculum_viteas', function (Blueprint $table) {
             $table->increments('id');
             $table->longtext('body');
             $table->timestamps();
