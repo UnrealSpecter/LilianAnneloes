@@ -13,7 +13,6 @@ class CurriculumViteasTableSeeder extends Seeder
     public function run()
     {
 
-
         \DB::table('curriculum_viteas')->delete();
 
         \DB::table('curriculum_viteas')->insert(array (
@@ -50,9 +49,7 @@ class CurriculumViteasTableSeeder extends Seeder
 <p>2017<br />MOVIEZONE JURY, IFFR FILMFESTIVAL, ROTTERDAM, NL<br />JURY KUNSTBENDE NATIONAL FINALE (POETRY), TIVOLI UTRECHT, JURY KUNSTBENDE GRONINGEN, SIMPLON (FILM), NL<br />HOSTESS AND TEACHER/INSTRUCTOR, THE STUDIOS, GRONINGER MUSEUM, GRONINGEN, NL</p>
 <p>2016<br />YOUNG ARTIST RESIDENCE WEEK , VILLANOVA FESTIVAL + KUNSTBENDE BELGIUM, ANTWERP, BE</p>
 <p>2015<br />YOUNG ARTIST EXCHANGE, VILLANOVA FESTIVAL + KUNSTBENDE NL/BE, ANTWERP, BE</p>
-<p>&nbsp;</p>',
-                'created_at' => '2018-10-17 14:27:00',
-                'updated_at' => '2018-10-17 14:46:33',
+<p>&nbsp;</p>'
             ),
         ));
 
