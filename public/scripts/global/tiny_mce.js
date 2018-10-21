@@ -7,6 +7,8 @@ $(document).ready(function() {
         min_height: 600,
         resize: "vertical",
         plugins: "paste, youtube, link, image",
+        paste_as_text: true,
+        preformatted: false,
         extended_valid_elements: "input[id|name|value|type|class|style|required|placeholder|autocomplete|onclick]",
         file_browser_callback: function(e, t, n, i) {
             "image" == n && $("#upload_file").trigger("click")
@@ -18,9 +20,7 @@ $(document).ready(function() {
         style_formats: [
             { title: 'Titel', block: 'h1'},
             { title: 'Kop', block: 'h2' },
-            { title: 'Paragraph', block: 'p'},
-            { title: 'Curriculum Heading', block: 'h3'},
-            { title: 'Curriculum Entry', block: 'h4'} 
+            { title: 'Paragraph', block: 'p'}
         ]
 
     });

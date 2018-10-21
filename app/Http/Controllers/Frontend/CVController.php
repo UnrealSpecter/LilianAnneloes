@@ -3,13 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-// use App\CvCategory;
-// use App\CvEntry;
+use App\Models\Cv;
 
 class CVController extends Controller
 {
     public function index(){
-        // $categories = CVCategory::with('entries')->get();
-        return view('partials.cv');
+        $cv = CV::first();
+        return view('partials.cv', compact('$cv', 'cv'));
     }
 }
