@@ -181,6 +181,10 @@ a:hover, .active {
         font-size: 1.5em;
     }
 
+    .back-button {
+        margin: 0;
+    }
+
     .master-container {
         padding: 80px
     }

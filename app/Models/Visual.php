@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Visual extends Model
 {
-    protected $fillable = ['tile', 'year_of_publishing'];
+    protected $fillable = ['title', 'date_of_publising', 'body', 'extra_information'];
 
     public function descriptions() {
         return $this->hasMany('App\Models\Description');

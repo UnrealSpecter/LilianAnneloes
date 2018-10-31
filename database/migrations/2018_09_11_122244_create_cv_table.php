@@ -27,6 +27,6 @@ class CreateCvTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('cv');
+        Schema::dropIfExists('curriculum_viteas');
     }
 }
