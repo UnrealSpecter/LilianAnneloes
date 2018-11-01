@@ -18,7 +18,6 @@ class CreateEventsTable extends Migration
             $table->string('title');
             $table->longtext('description');
             $table->string('image_path');
-            $table->string('external_link')->nullable();
             $table->timestamps();
         });
     }
