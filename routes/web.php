@@ -22,8 +22,8 @@ Route::get('/textual', function () {
 Route::get('/textual/notebook', 'NotebookController@index');
 Route::get('/about', 'AboutController@index');
 Route::get('/about/cv', 'CVController@index');
-Route::get('/about/news', 'EventController@index');
-Route::get('/about/news/{id}', 'EventController@show');
+Route::get('/about/news', 'Frontend\EventController@index');
+Route::get('/about/news/{id}', 'Frontend\EventController@show');
 
 // visuals and writings index (overviews)
 Route::get('/visuals', 'Frontend\VisualController@index');
