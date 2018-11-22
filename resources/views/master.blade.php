@@ -2,7 +2,7 @@
 <html lang="nl">
     <head data-enhance="false">
         @include('meta')
-        @include('css')
+        @include('styles')
     </head>
     <body>
         <!-- start of the page content -->
