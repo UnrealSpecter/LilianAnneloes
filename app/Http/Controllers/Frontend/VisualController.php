@@ -16,11 +16,9 @@ class VisualController extends Controller
         return redirect('/visuals/' . $visuals->first()->id);
     }
 
-
-
     public function show($id){
         // all visuals for the menu items
-        $visuals = Visual::all();
+        $visuals = Visual::select('*')->orderBy('date_of_publising', 'asc')->get();
         //the single visual for the information presentation
         $activeVisual = Visual::find($id);
         //return both to the view

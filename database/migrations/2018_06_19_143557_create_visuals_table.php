@@ -16,6 +16,7 @@ class CreateVisualsTable extends Migration
         Schema::create('visuals', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title');
+            //there is a typo in the name. remember.
             $table->string('date_of_publising');
             $table->longtext('body');
             $table->longtext('extra_information');

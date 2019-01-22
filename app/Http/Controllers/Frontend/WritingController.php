@@ -31,7 +31,7 @@ class WritingController extends Controller
 
     public function show($id){
         $activeWriting = Writing::find($id);
-        $writings = Writing::select('*')->orderBy('created_at', 'asc')->get();
+        $writings = Writing::select('*')->orderBy('date_of_publising', 'asc')->get();
         return view('front-end.writings.show', compact('activeWriting', 'writings'));
     }
 }
