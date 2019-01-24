@@ -8,11 +8,11 @@
 
 @section('content')
 
-    <div class="col-sm-12 col-xl-3 d-flex flex-column align-items-start justify-content-start about-menu" style="z-index: 2;">
+    <div class="col-sm-12 col-xl-1 d-flex flex-column align-items-start justify-content-start about-menu" style="z-index: 2;">
         <a class="back-button" href="{{url('/textual')}}">(( back</a>
     </div>
 
-    <div class="agenda-wrapper col-xl-9 col-md-12 col-sm-12 col-xs-12 d-flex justify-content-center align-items-center" style="height: 100vh;">
+    <div class="agenda-wrapper col-xl-11 col-md-12 col-sm-12 col-xs-12 d-flex justify-content-center align-items-center" style="height: 100vh;">
         <div class="t">
             <div class="tc rel">
                 <div class="book" id="book">
