@@ -18,6 +18,7 @@
         <div class="visual-wrapper col-12 col-xl-7 d-flex flex-column wrapper-img">{!! $activeVisual->body !!}</div>
         <div class="visual-description-wrapper d-flex flex-column col-12 col-xl-5 no-padding-margin">{!! $activeVisual->extra_information !!}</div>
     </div>
+    
 @endsection
 
 @section('additional-scripts')
