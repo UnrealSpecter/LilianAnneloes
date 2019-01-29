@@ -9,7 +9,7 @@
 @section('content')
 
     <div class="col-sm-12 col-xl-1 d-flex flex-column align-items-start justify-content-start about-menu" style="z-index: 2;">
-        <a class="back-button" href="{{url('/textual')}}">(( back</a>
+        <a class="back-button" href="{{url('/textual')}}"><img src="{{ asset('/assets/arrow-left.png') }}"> back</a>
     </div>
 
     <div class="agenda-wrapper col-xl-11 col-md-12 col-sm-12 col-xs-12 d-flex justify-content-center align-items-center" style="height: 100vh;">

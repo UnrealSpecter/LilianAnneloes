@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Lilian_anneloes_script';
+    src: url('Lilian_anneloes_scrip-Regular.eot');
+    src: url('Lilian_anneloes_scrip-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Lilian_anneloes_scrip-Regular.woff2') format('woff2'),
+        url('Lilian_anneloes_scrip-Regular.woff') format('woff'),
+        url('Lilian_anneloes_scrip-Regular.ttf') format('truetype'),
+        url('Lilian_anneloes_scrip-Regular.svg#Lilian_anneloes_scrip-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

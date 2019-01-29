@@ -9,7 +9,7 @@
 @section('content')
 
     <div class="col-sm-12 col-xl-3 d-flex flex-column align-items-start justify-content-start about-menu" style="z-index: 2;">
-        <a class="back-button" href="{{url('/')}}">(( back</a>
+        <a class="back-button" href="{{url('/')}}"><img src="{{ asset('/assets/arrow-left.png') }}"> back</a>
     </div>
 
     <div class="col-sm-12 col-xl-12 d-flex align-items-center justify-content-center no-margin-padding" style="height: 100vh; width: 100vw; position: absolute; top: 0; left: 0;">

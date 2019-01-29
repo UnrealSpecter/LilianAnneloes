@@ -11,7 +11,7 @@
         @foreach($writings as $writing)
         <a @if($activeWriting->id === $writing->id) class="active" @endif href="{{ url('/writings') }}/{{ $writing->id }}">{{  Carbon\Carbon::parse($writing->date_of_publising)->format('F Y') }}, {{ $writing->title }}</a>
         @endforeach
-        <a class="back-button" href="{{url('/textual/')}}">(( back</a>
+        <a class="back-button" href="{{url('/textual/')}}"><img src="{{ asset('/assets/arrow-left.png') }}"> back</a>
     </div>
 
     <div class="col-12 col-xl-9 d-flex flex-row flex-wrap no-padding-margin">

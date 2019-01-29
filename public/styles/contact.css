@@ -1,16 +1,16 @@
 html,body {
     height: 100vh;
-    color: white;
-    background: url('/assets/contact/bg.jpg') no-repeat center center fixed;
+    color: black;
+    /* background: url('/assets/contact/bg.jpg') no-repeat top right fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: cover; */
 }
 
 .underline{
     padding-bottom: 3px;
-    border-bottom: 1.5px solid white;
+    border-bottom: 1.5px solid black;
 }
 
 input{
@@ -27,6 +27,16 @@ textarea{
 
 .submit {
     width: 25%;
+}
+
+.washand {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.contact-wrapper {
+    margin: 15px 0 15px 0;
 }
 
 @media screen and (max-height: 320px) {
@@ -54,14 +64,15 @@ textarea{
 
 @media (min-width: 992px) {
     .contact-wrapper {
-        bottom: 0;
-        position: absolute;
-        bottom: 40px;
+        margin: 0;
     }
+
 }
 
 @media (min-width: 1200px) {
-
+    .washand {
+        padding-right: 30px;
+    }
 }
 
 @media (min-width: 1500px) {

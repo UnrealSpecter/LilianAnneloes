@@ -8,7 +8,7 @@
 @section('content')
 
         <div class="col-sm-12 col-lg-2 col-xl-2 d-flex flex-column align-items-start justify-content-start about-menu">
-            <a class="back-button" href="{{url('/about/news')}}">(( back</a>
+            <a class="back-button" href="{{ url('/about/news')}}"><img src="{{ asset('/assets/arrow-left.png') }}"> back</a>
         </div>
 
         <div class="event-wrapper col-sm-12 col-lg-10 col-xl-10 d-flex justify-content-lg-around justify-content-xl-between flex-wrap no-padding-margin">

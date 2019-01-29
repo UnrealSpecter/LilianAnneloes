@@ -2,7 +2,7 @@ $(document).ready(function(){
 
     //add fluid classes to correctly display images
     $('img').addClass('img-fluid col-12 no-padding-margin');
-
+    $('.back-button > img').attr('class', '');
     // $.each($('img'), function(index, image){
     //     var imageUrl = $(image).attr('src');
     //     imageUrl = imageUrl.substring(4);

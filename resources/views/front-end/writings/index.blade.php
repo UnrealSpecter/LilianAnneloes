@@ -13,7 +13,7 @@
         @foreach($yearsOfPublishing as $yearOfPublishing)
         <a href="{{ url('/writings/') }}/year-of-publishing/{{ $yearOfPublishing }}">writings ({{ $yearOfPublishing }})</a>
         @endforeach
-        <a href="{{ url('/') }}">(( back</a>
+        <a href="{{ url('/') }}"><img src="{{ asset('/assets/arrow-left.png') }}"> back</a>
     </div>
 
     <div class="col-12 col-xl-9 d-flex flex-row flex-wrap no-padding-margin">

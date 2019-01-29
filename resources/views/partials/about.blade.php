@@ -13,7 +13,7 @@
             <a class="active" href="{{url('/about')}}">About</a>
             <a href="{{url('/about/cv')}}">Curriculum Vitae</a>
             <!-- <a href="{{url('/about/news')}}">News</a> -->
-            <a class="back-button" href="{{url('/')}}">(( back</a>
+            <a class="back-button" href="{{ url('/') }}"><img src="{{ asset('/assets/arrow-left.png') }}"> back</a>
         </div>
 
         <div class="col-xl-8 no-padding-margin">
