@@ -7,8 +7,6 @@
 
 @section('content')
 
-
-
     <div class="col-12 d-flex flex-row flex-wrap">
         <!-- MENU -->
         <div class="col-12 col-sm-12 col-lg-3">
@@ -55,7 +53,7 @@
             {{ Form::close() }}
         </div>
         <div class="col-12 col-lg-4 col-xl-5 d-flex align-items-center justify-content-center">
-            <img src="{{ asset('/assets/washandje.jpg') }}" class="washand img-fluid">
+            <img src="{{ asset('/assets/contact/sok.jpg') }}" class="sok img-fluid">
         </div>
     </div>
 
