@@ -9,7 +9,7 @@
 
     <div class="col-12 d-flex flex-row flex-wrap">
         <!-- MENU -->
-        <div class="col-12 col-sm-12 col-lg-3">
+        <div class="col-12 col-sm-12 col-lg-2 col-xl-5">
             <h4><a href="/" class="back-button" style="color: black;"><img src="{{ asset('/assets/arrow-left.png') }}"> back</a><h4>
         </div>
 
@@ -52,7 +52,7 @@
             <input class="submit" type="submit" value="Submit">
             {{ Form::close() }}
         </div>
-        <div class="col-12 col-lg-4 col-xl-5 d-flex align-items-center justify-content-center">
+        <div class="col-12 col-lg-4 col-xl-3 d-flex align-items-center justify-content-center">
             <img src="{{ asset('/assets/contact/sok.jpg') }}" class="sok img-fluid">
         </div>
     </div>

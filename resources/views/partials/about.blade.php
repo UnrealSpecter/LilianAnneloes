@@ -12,7 +12,7 @@
         <div class="col-sm-12 col-xl-3 d-flex flex-column align-items-start justify-content-start about-menu">
             <a class="active" href="{{url('/about')}}">About</a>
             <a href="{{url('/about/cv')}}">Curriculum Vitae</a>
-            <!-- <a href="{{url('/about/news')}}">News</a> -->
+            <a href="{{url('/about/news')}}">News</a>
             <a class="back-button" href="{{ url('/') }}"><img src="{{ asset('/assets/arrow-left.png') }}"> back</a>
         </div>
 
