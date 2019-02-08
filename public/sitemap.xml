@@ -9,28 +9,53 @@
 
 <url>
   <loc>https://liliananneloes.com/</loc>
-  <lastmod>2018-10-21T17:58:51+00:00</lastmod>
+  <lastmod>2019-02-08T09:39:00+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://liliananneloes.com/about</loc>
-  <lastmod>2018-10-21T17:58:51+00:00</lastmod>
+  <lastmod>2019-02-08T09:39:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://liliananneloes.com/textual</loc>
-  <lastmod>2018-10-21T17:58:51+00:00</lastmod>
+  <lastmod>2019-02-08T09:39:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://liliananneloes.com/contact</loc>
-  <lastmod>2018-10-21T17:58:51+00:00</lastmod>
+  <lastmod>2019-02-08T09:39:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://liliananneloes.com/about/cv</loc>
-  <lastmod>2018-10-21T17:58:51+00:00</lastmod>
+  <lastmod>2019-02-08T09:39:00+00:00</lastmod>
   <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://liliananneloes.com/about/news</loc>
+  <lastmod>2019-02-08T09:39:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://liliananneloes.com/about/news/2</loc>
+  <lastmod>2019-02-08T09:39:00+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://liliananneloes.com/about/news/4</loc>
+  <lastmod>2019-02-08T09:39:00+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://liliananneloes.com/about/news/5</loc>
+  <lastmod>2019-02-08T09:39:00+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://liliananneloes.com/about/news/6</loc>
+  <lastmod>2019-02-08T09:39:00+00:00</lastmod>
+  <priority>0.51</priority>
 </url>
 
 
