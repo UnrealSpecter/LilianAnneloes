@@ -11,7 +11,7 @@ class WritingController extends Controller
 {
 
     public function index(){
-        $writings = Writing::all();
+        $writings = Writing::select('*')->orderBy('date_of_publising', 'desc')->get();
 
         //define the categories that need to be shown by looping through all the visuals years of publishing and if it's not in there add it.
         // $yearsOfPublishing = array();
@@ -31,7 +31,7 @@ class WritingController extends Controller
 
     public function show($id){
         $activeWriting = Writing::find($id);
-        $writings = Writing::select('*')->orderBy('date_of_publising', 'asc')->get();
+        $writings = Writing::select('*')->orderBy('date_of_publising', 'desc')->get();
         return view('front-end.writings.show', compact('activeWriting', 'writings'));
     }
 }
