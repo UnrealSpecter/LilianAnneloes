@@ -11,7 +11,7 @@
         <div class="col-12 col-lg-3 col-xl-3 d-flex flex-column align-items-start justify-content-xl-start justify-content-lg-start cv-menu no-padding-margin">
             <a href="{{url('/about')}}">About</a>
             <a class="active" href="{{ url('/about/cv') }}">Curriculum Vitae</a>
-            <a style="margin-bottom: 10px; font-size: 2em;" href="{{url('/about/news')}}">News</a>
+            <a style="margin-bottom: 10px;" href="{{url('/about/news')}}">News</a>
             <a class="back-button" href="{{url('/')}}"><img src="{{ asset('/assets/arrow-left.png') }}"> back</a>
         </div>
 
