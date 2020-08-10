@@ -17,9 +17,9 @@
             <a href="{{url('/textual/writings')}}">
                 <img class="coin-left" src="{{ asset('/assets/textual/coin-notebook-front.png') }}" onmouseover="this.src='{{ asset('/assets/textual/coin-notebook-back.png') }}'" onmouseout="this.src='{{ asset('/assets/textual/coin-notebook-front.png') }}'" border="0" alt="" >
             </a>
-            <!-- <a href="{{url('/textual/notebook')}}">
+            <a href="{{url('/textual/notebook')}}">
                 <img class="coin-right" src="{{ asset('/assets/textual/coin-writing-front.png') }}" onmouseover="this.src='{{ asset('/assets/textual/coin-writing-back.png') }}'" onmouseout="this.src='{{ asset('/assets/textual/coin-writing-front.png') }}'" border="0" alt="" >
-            </a> -->
+            </a>
         </div>
     </div>
 
