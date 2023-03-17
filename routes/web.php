@@ -33,9 +33,7 @@ Route::get('/textual/writings', 'Frontend\WritingController@index');
 Route::get('/visuals/{id}', 'Frontend\VisualController@show');
 Route::get('/writings/{id}', 'Frontend\WritingController@show');
 
-Route::get('/contact', function () {
-    return view('partials.contact');
-});
+Route::get('/contact', 'Frontend\ContactController@index');
 
 Route::post('/contact', 'ContactController@index');
 
